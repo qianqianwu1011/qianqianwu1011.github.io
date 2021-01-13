@@ -41,3 +41,42 @@ li a:hover {
   background-size: cover;
 
 }
+
+.menu-content{
+  display: none;
+}
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+.buttomnav {
+  position:absolute;
+  background-color: transparent;
+  width: 700px;
+  bottom:40px;
+  right:25%;
+  left:25%;
+  text-align: center;
+}
+.buttomnav a{
+  font-family: 'Satisfy', cursive;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  display: inline;
+  text-align: right;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+.buttomnav a:hover {
+  text-decoration: underline;
+}
+
+#a1, #a2, #a3{
+  display: none;
+}

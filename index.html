@@ -4,15 +4,35 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="src/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="src/index.js"></script>
 	</head>
 	<body>
 		<div class="bg">
 			<ul class="nav">
-				<li class="left"><a href="#me">About Me</a></li>
-				<li class="left"><a href="#sample">Sample Reel</a></li>
-				<li class="right"><a href="#portfolio">Portfolio</a></li>
-				<li class="right"><a href="#animation">Animation</a></li>
+				<li class="left"><a class="menubtn" href="#about">About Me</a></li>
+				<li class="left"><a class="menubtn" href="#sample">Sample Reel</a></li>
+				<li class="right"><a class="menubtn" href="#portfolio">Portfolio</a></li>
+				<li class="right"><a class="menubtn" href="#animation">Animation</a></li>
 			</ul>
+			<div id="about" class="menu-content">
+				<div id="intro" class="video"></div>
+			</div>
+			<div id="sample" class="menu-content">
+				<div id="reel" class="video"></div>
+			</div>
+			<div id="portfolio" class="menu-content"></div>
+			<div id="animation" class="menu-content">
+				<div id="a1" class="video"></div>
+				<div id="a2" class="video"></div>
+				<div id="a3" class="video"></div>
+				<div class="buttomnav">
+					<a class="animebtn" href="#a1">MOM</a>
+				  	<a class="animebtn" href="#a2">Motion Graphic</a>
+				  	<a class="animebtn" href="#a3">Stop Motion</a>
+				</div>
+			</div>
 		</div>
+
 	</body>
 </html>
