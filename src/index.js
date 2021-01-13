@@ -52,6 +52,13 @@ $(function(){
 	  $(selector).show();
 	}
 	$('.menubtn').on('click', function(e) {
+		var curname = $(this).attr('href').substr(1);
+		$("iframe").each(function() {
+			if ($(this).parent().attr('id') != curname){
+        var src= $(this).attr('src');
+        $(this).attr('src',src);  
+      }
+		});
 	  showContent(e.currentTarget.hash);
 	  e.preventDefault();
 	}); 
@@ -61,6 +68,13 @@ $(function(){
 		$(selector).show();
 	}
 	$('.animebtn').on('click', function(e) {
+		var curanime = $(this).attr('href').substr(1);
+		$("iframe").each(function() { 
+			if ($(this).attr('id') != curanime){
+      	var src= $(this).attr('src');
+      	$(this).attr('src',src);  
+    	}
+		});
 	  showAnime(e.currentTarget.hash);
 	  e.preventDefault();
 	}); 
