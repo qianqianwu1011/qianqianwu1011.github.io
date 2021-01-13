@@ -51,7 +51,17 @@ li a:hover {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
+}
+
+#pdf {
+  width: 80%;
+  height: 80%;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .buttomnav {
   position:absolute;
