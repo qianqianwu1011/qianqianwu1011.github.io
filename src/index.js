@@ -65,5 +65,6 @@ $(function(){
 	  e.preventDefault();
 	}); 
 	$('#a1').show();
+	$('.menu-content').hide();
 });
 
